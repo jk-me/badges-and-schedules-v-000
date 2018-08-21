@@ -4,7 +4,7 @@ def badge_maker(name)
   return "Hello, my name is #{name}."
 end
 
-def batch_badge_maker(array)
+def batch_badge_creator(array)
   badges=array.collect{|x| badge_maker(x)}
   badges
   
@@ -15,7 +15,7 @@ def assign_rooms(array)
 end
   
 def printer(array)
-  badges=batch_badge_maker(array)
+  badges=batch_badge_creator(array)
   assignments=assign_rooms(array)
   array.each do |name|
     puts badges[array.index(name)]
