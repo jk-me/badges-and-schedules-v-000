@@ -11,7 +11,7 @@ def batch_badge_creator(array)
 end
 
 def assign_rooms(array)
-  assignments=array.collect{|name| "Hello #{name}! You'll be assigned to room #{array.index(name)+1}!"}
+  assignments=array.collect{|name| "Hello, #{name}! You'll be assigned to room #{array.index(name)+1}!"}
 end
   
 def printer(array)
